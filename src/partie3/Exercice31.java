@@ -1,7 +1,6 @@
 package partie3;
 
-public class Exercice31
-{
+public class Exercice31 {
 
 	public static void main(String[] argv) {
 		Voiture E350;
@@ -11,9 +10,8 @@ public class Exercice31
 		E350.m_vitesse = 260;
 		E350.m_estDemarree = false;
 
-	
 		SLK230.m_puissance = 292;
 		SLK230.m_vitesse = 240;
 		SLK230.m_estDemarree = false;
-}
+	}
 }
