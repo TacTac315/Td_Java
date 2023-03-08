@@ -19,17 +19,19 @@ public class exercice21 {
         charArray[2] = 'o';
         charArray[3] = 'u';
         charArray[4] = 'b';
-
-        for (int current : Ayoub_Array) {
-            System.out.println(current);
-        }
-
+        
         afficheTableau(charArray);
+        afficheTableauShort(Ayoub_Array);
     }
 
     public static void afficheTableau(char[] tab) {
         for (char current : tab) {
             System.out.println(current);
         }
+    }
+    public static void afficheTableauShort (short [] tab) {
+    	for (short current : tab) {
+    		System.out.println(current);
+    	}
     }
 }
