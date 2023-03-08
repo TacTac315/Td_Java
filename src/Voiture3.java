@@ -1,30 +1,30 @@
 
-public class Voiture2 {
+public class Voiture3 {
 	private int m_puissance;
 	private int m_vitesse;
 	private boolean m_estDemarree;
 
 	// Constructeurs (pas de voiture)
 
-	public Voiture2() {
+	public Voiture3() {
 		setM_puissance(0);
 		setM_vitesse(0);
 		setM_estDemarree(false);
 	}
 
-	public Voiture2(int puissance) {
+	public Voiture3(int puissance) {
 		setM_puissance(puissance);
 		setM_vitesse(0);
 		setM_estDemarree(false);
 	}
 
-	public Voiture2(int puissance, int vitesse) {
+	public Voiture3(int puissance, int vitesse) {
 		setM_puissance(puissance);
 		setM_vitesse(vitesse);
 		setM_estDemarree(false);
 	}
 
-	public Voiture2(int puissance, int vitesse, boolean estDemarree) {
+	public Voiture3(int puissance, int vitesse, boolean estDemarree) {
 		setM_puissance(puissance);
 		setM_vitesse(vitesse);
 		setM_estDemarree(estDemarree);
@@ -54,8 +54,16 @@ public class Voiture2 {
 		this.m_estDemarree = m_estDemarree;
 	}
 
+	// Méthodes
+
 	public void demarre() {
 		setM_estDemarree(true);
+	}
+
+	public void demarre(int vitesse) {
+		if (vitesse > 0) {
+			setM_estDemarree(true);
+		}
 	}
 
 	public void afficheVoiture() {
@@ -63,4 +71,5 @@ public class Voiture2 {
 		System.out.println("Vitesse : " + this.m_vitesse);
 		System.out.println("Est démarré ? " + this.m_estDemarree);
 	}
+
 }
